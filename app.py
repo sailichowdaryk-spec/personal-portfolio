@@ -19,7 +19,7 @@ PROFILE = {
         "with React and Flask."
     ),
     "highlights": [
-        {"label": "Internship", "value": "Data Science Intern at IDEAS-TIH, Indian Statistical Institute Kolkata" 
+        {"label": "Internship", "value": "Data Science Intern at IDEAS-TIH, Indian Statistical Institute Kolkata ," 
         "AIML Research intern at IIT Ghuwahati "},
         {"label": "Focus areas", "value": "Machine Learning · Computer Vision · NLP · Full-stack (React, Flask)"},
         {"label": "Currently", "value": "Training YOLO11n on the TrashCan dataset for underwater garbage detection"},
@@ -31,9 +31,9 @@ PROFILE = {
         "Tools": ["Git/GitHub", "Google Colab", "ngrok", "Jupyter"],
     },
     "contact": {
-        "email": "hello@example.com",
-        "github": "https://github.com/",
-        "linkedin": "https://linkedin.com/",
+        "email": "sailichowdaryk@gmail.com",
+        "github": "https://github.com/sailichowdaryk-spec",
+        "linkedin": "https://www.linkedin.com/in/saili-chowdary-kamsani-9bb23937b/?isSelfProfile=true",
     },
 }
 
