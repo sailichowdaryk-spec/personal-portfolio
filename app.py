@@ -110,6 +110,8 @@ PROJECTS = [
         "stack": ["Node.js", "Express", "SQLite"],
     },
     {
+        cat << 'EOF'
+    {
         "slug": "nlp-web-app",
         "title": "Multi-Model NLP Web App",
         "blurb": "A Flask app serving three Hugging Face NLP models through one interface.",
@@ -126,17 +128,67 @@ PROJECTS = [
         ],
         "stack": ["Flask", "Hugging Face Transformers", "ngrok", "Google Colab"],
     },
-          
-            "stack": ["Flask", "Hugging Face Transformers", "ngrok", "Google Colab"],
-    },
-
     {
         "slug": "terrawatch",
-        ...
+        "title": "TerraWatch — Landslide Early Warning System",
+        "blurb": "A prototype dashboard that scores landslide risk in real time from rainfall and soil-moisture inputs.",
+        "tags": ["Data Viz", "JavaScript", "Simulation"],
+        "featured": True,
+        "description": (
+            "A Smart India Hackathon (SIH26001) prototype for an early-warning system: "
+            "an interactive risk map paired with a transparent, explainable scoring engine, "
+            "built to run entirely offline for demos with no live backend required."
+        ),
+        "details": [
+            "Built an interactive Leaflet.js risk map with grid cells that recolor live (low / watch / warning / danger) as conditions change.",
+            "Designed a risk-scoring engine combining rainfall intensity, rainfall duration, antecedent rainfall, and soil moisture, with an explainability panel breaking the score into each factor's contribution.",
+            "Added role-based views (district officer, admin, citizen) that show or hide the threshold-tuning and citizen-reporting panels accordingly.",
+            "Built an admin panel for live-tuning yellow/orange/red alert thresholds, backed by a six-check automated self-test suite verifying monotonicity, score capping, and contribution-share accuracy.",
+            "Added a storm-replay mode and quick scenario presets (calm/watch/warning/danger) plus a citizen ground-report feature for logging on-map observations, so the whole demo runs client-side.",
+        ],
         "stack": ["JavaScript", "Leaflet.js", "Chart.js", "HTML/CSS"],
     },
 ]
+EOF
+Output
 
+    {
+        "slug": "nlp-web-app",
+        "title": "Multi-Model NLP Web App",
+        "blurb": "A Flask app serving three Hugging Face NLP models through one interface.",
+        "tags": ["NLP", "Flask", "Hugging Face"],
+        "featured": False,
+        "description": (
+            "A web app built in Google Colab that hosts three Hugging Face models "
+            "behind a single embedded frontend, tunneled out with ngrok."
+        ),
+        "details": [
+            "Served sentiment analysis, summarization, and zero-shot classification models through one Flask backend.",
+            "Built a fully embedded HTML frontend within the same Colab notebook.",
+            "Resolved torch/torchvision version mismatches and ngrok tunnel conflicts during deployment.",
+        ],
+        "stack": ["Flask", "Hugging Face Transformers", "ngrok", "Google Colab"],
+    },
+    {
+        "slug": "terrawatch",
+        "title": "TerraWatch — Landslide Early Warning System",
+        "blurb": "A prototype dashboard that scores landslide risk in real time from rainfall and soil-moisture inputs.",
+        "tags": ["Data Viz", "JavaScript", "Simulation"],
+        "featured": True,
+        "description": (
+            "A Smart India Hackathon (SIH26001) prototype for an early-warning system: "
+            "an interactive risk map paired with a transparent, explainable scoring engine, "
+            "built to run entirely offline for demos with no live backend required."
+        ),
+        "details": [
+            "Built an interactive Leaflet.js risk map with grid cells that recolor live (low / watch / warning / danger) as conditions change.",
+            "Designed a risk-scoring engine combining rainfall intensity, rainfall duration, antecedent rainfall, and soil moisture, with an explainability panel breaking the score into each factor's contribution.",
+            "Added role-based views (district officer, admin, citizen) that show or hide the threshold-tuning and citizen-reporting panels accordingly.",
+            "Built an admin panel for live-tuning yellow/orange/red alert thresholds, backed by a six-check automated self-test suite verifying monotonicity, score capping, and contribution-share accuracy.",
+            "Added a storm-replay mode and quick scenario presets (calm/watch/warning/danger) plus a citizen ground-report feature for logging on-map observations, so the whole demo runs client-side.",
+        ],
+        "stack": ["JavaScript", "Leaflet.js", "Chart.js", "HTML/CSS"],
+    },
 ]
 
 
