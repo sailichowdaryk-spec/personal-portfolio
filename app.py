@@ -149,7 +149,7 @@ PROJECTS = [
         "stack": ["JavaScript", "Leaflet.js", "Chart.js", "HTML/CSS"],
     },
 ]
-
+}
 
 def get_project_or_404(slug):
     for project in PROJECTS:
