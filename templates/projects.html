@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Work — {{ profile.name }}{% endblock %}
+{% block content %}
+
+<section class="page-head">
+  <h1>🗂️ All my work</h1>
+  <p>{{ projects|length }} things I've built — from research-heavy CV work to small-business sites.</p>
+</section>
+
+<section class="card-grid card-grid-full">
+  {% set palette = ["card-pink", "card-blue", "card-yellow", "card-green"] %}
+  {% for p in projects %}
+  <a class="proj-card {{ palette[loop.index0 % palette|length] }}" href="{{ url_for('project_detail', slug=p.slug) }}">
+    <span class="card-kicker">{{ p.tags[0] }}</span>
+    <h3>{{ p.title }}</h3>
+    <p>{{ p.blurb }}</p>
+    <p class="card-stack">{{ p.stack|join(" · ") }}</p>
+  </a>
+  {% endfor %}
+</section>
+
+{% endblock %}
