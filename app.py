@@ -30,9 +30,9 @@ PROFILE = {
         "Tools": ["Git/GitHub", "Google Colab", "ngrok", "Jupyter"],
     },
     "contact": {
-        "email": "hello@example.com",
-        "github": "https://github.com/",
-        "linkedin": "https://linkedin.com/",
+        "email": "sailichowdaryk@gmail.com",
+        "github": "https://github.com/sailichowdaryk-spec",
+        "linkedin": "https://www.linkedin.com/in/saili-chowdary-kamsani-9bb23937b/?isSelfProfile=true",
     },
 }
 
