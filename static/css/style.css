@@ -1,12 +1,13 @@
-:root {
-  --ink: #4A4053;
-  --ink-dim: #948A9C;
-  --ink-faint: #C6BCCC;
-  --bg: #FBF7FA;
-  --bg-raised: #F3ECF4;
-  --line: #E6DCE9;
-  --amber: #D98BA0;
-  --sage: #6FAF9B;
+
+ :root {
+  --ink: #F1E9F5;
+  --ink-dim: #B6A3C4;
+  --ink-faint: #7A6690;
+  --bg: #1B1024;
+  --bg-raised: #241531;
+  --line: #3A2647;
+  --amber: #E8C15C;
+  --sage: #B48EE0;
   --font-display: "Space Grotesk", sans-serif;
   --font-mono: "IBM Plex Mono", monospace;
   --font-body: "Inter", sans-serif;
