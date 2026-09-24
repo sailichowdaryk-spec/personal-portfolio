@@ -130,7 +130,7 @@ PROJECTS = [
     {
         "slug": "terrawatch",
         "title": "TerraWatch — Landslide Early Warning System",
-        ...
+        ],
         "stack": ["JavaScript", "Leaflet.js", "Chart.js", "HTML/CSS"],
     },
 
