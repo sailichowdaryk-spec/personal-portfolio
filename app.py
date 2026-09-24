@@ -126,6 +126,14 @@ PROJECTS = [
         ],
         "stack": ["Flask", "Hugging Face Transformers", "ngrok", "Google Colab"],
     },
+          
+    {
+        "slug": "terrawatch",
+        "title": "TerraWatch — Landslide Early Warning System",
+        ...
+        "stack": ["JavaScript", "Leaflet.js", "Chart.js", "HTML/CSS"],
+    },
+
 ]
 
 
