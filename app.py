@@ -7,7 +7,7 @@ app = Flask(__name__)
 # ---------------------------------------------------------------------------
 
 PROFILE = {
-    "name": "Saili",
+    "name": "Saili Chowdary Kamsani",
     "tagline": "CSE student building at the intersection of ML, vision, and full-stack products.",
     "location": "Hyderabad, India",
     "bio": (
@@ -19,7 +19,8 @@ PROFILE = {
         "with React and Flask."
     ),
     "highlights": [
-        {"label": "Internship", "value": "Data Science Intern, IDEAS-TIH, Indian Statistical Institute Kolkata — Outstanding grade"},
+        {"label": "Internship", "value": "Data Science Intern at IDEAS-TIH, Indian Statistical Institute Kolkata" 
+        "AIML Research intern at IIT Ghuwahati "},
         {"label": "Focus areas", "value": "Machine Learning · Computer Vision · NLP · Full-stack (React, Flask)"},
         {"label": "Currently", "value": "Training YOLO11n on the TrashCan dataset for underwater garbage detection"},
     ],
