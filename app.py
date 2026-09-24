@@ -7,20 +7,19 @@ app = Flask(__name__)
 # ---------------------------------------------------------------------------
 
 PROFILE = {
-    "name": "Saili Chowdary Kamsani",
+    "name": "Kamsani Saili Chowdary",
     "tagline": "CSE student building at the intersection of ML, vision, and full-stack products.",
     "location": "Hyderabad, India",
     "bio": (
         "I'm a second-year CSE student who likes taking a project from a research "
         "paper to something that actually runs — whether that's a detector trained "
         "on underwater trash, a vector-search tool for classifying complaints, or "
-        "a small business website with its own hand-built design system. My work "
-        "spans machine learning, NLP, computer vision, and full-stack development "
-        "with React and Flask."
+        "an early-warning dashboard for landslide risk. My work spans machine "
+        "learning, NLP, computer vision, and full-stack development with React "
+        "and Flask."
     ),
     "highlights": [
-        {"label": "Internship", "value": "Data Science Intern at IDEAS-TIH, Indian Statistical Institute Kolkata ," 
-        "AIML Research intern at IIT Ghuwahati "},
+        {"label": "Internship", "value": "Data Science Intern, IDEAS-TIH, Indian Statistical Institute Kolkata , AIML research intern at IIT Guwahati"},
         {"label": "Focus areas", "value": "Machine Learning · Computer Vision · NLP · Full-stack (React, Flask)"},
         {"label": "Currently", "value": "Training YOLO11n on the TrashCan dataset for underwater garbage detection"},
     ],
@@ -53,7 +52,7 @@ PROJECTS = [
             "Built a COCO-format dataset-auditing toolkit and ran exploratory data analysis on the TrashCan dataset.",
             "Designed a preprocessing pipeline with leakage-safe train/val/test splits and a SHA-256 dataset freeze for reproducibility.",
             "Ran detector experiments comparing Faster R-CNN against MobileNetV3 variants.",
-            "Pivoted the modeling plan to YOLO11n (250 epochs), replacing an earlier YOLOv8s approach.",
+            "Pivoted the modeling plan to YOLO11n (150 epochs), replacing an earlier YOLOv8s approach.",
             "Synthesized research across five YOLO / Faster R-CNN papers into a full project plan, plus PowerPoint decks for mentor reviews.",
             "Worked through recurring real-world friction: PowerShell environment quirks, numpy version conflicts, Jupyter PATH issues, YAML errors, and OOM kernel kills during training.",
         ],
@@ -110,8 +109,6 @@ PROJECTS = [
         "stack": ["Node.js", "Express", "SQLite"],
     },
     {
-        cat << 'EOF'
-    {
         "slug": "nlp-web-app",
         "title": "Multi-Model NLP Web App",
         "blurb": "A Flask app serving three Hugging Face NLP models through one interface.",
@@ -149,7 +146,7 @@ PROJECTS = [
         "stack": ["JavaScript", "Leaflet.js", "Chart.js", "HTML/CSS"],
     },
 ]
-}
+
 
 def get_project_or_404(slug):
     for project in PROJECTS:
