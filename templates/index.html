@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="hero">
+  <h1 class="hero-title">{{ profile.tagline }}</h1>
+  <p class="hero-bio">{{ profile.bio }}</p>
+</section>
+
+<section class="highlights">
+  {% for h in profile.highlights %}
+  <div class="highlight-row">
+    <span class="highlight-label">{{ h.label }}</span>
+    <span class="highlight-value">{{ h.value }}</span>
+  </div>
+  {% endfor %}
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Featured work</h2>
+    <a href="{{ url_for('projects') }}" class="text-link">All projects &rarr;</a>
+  </div>
+  <div class="project-list">
+    {% for p in projects %}
+    <a class="project-row" href="{{ url_for('project_detail', slug=p.slug) }}">
+      <div class="project-row-main">
+        <h3>{{ p.title }}</h3>
+        <p>{{ p.blurb }}</p>
+      </div>
+      <div class="project-row-tags">
+        {% for tag in p.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <div class="section-head">
+    <h2>Skills</h2>
+  </div>
+  <div class="skills-grid">
+    {% for group, items in profile.skills.items() %}
+    <div class="skills-group">
+      <h4>{{ group }}</h4>
+      <ul>
+        {% for item in items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

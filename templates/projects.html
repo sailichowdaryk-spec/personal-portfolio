@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Projects &mdash; {{ profile.name }}{% endblock %}
+{% block content %}
+
+<section class="page-head">
+  <h1>Projects</h1>
+  <p>{{ projects|length }} things I've built &mdash; from research-heavy CV work to small-business sites.</p>
+</section>
+
+<section class="project-list project-list-full">
+  {% for p in projects %}
+  <a class="project-row" href="{{ url_for('project_detail', slug=p.slug) }}">
+    <div class="project-row-main">
+      <h3>{{ p.title }}</h3>
+      <p>{{ p.blurb }}</p>
+      <p class="stack-line">{{ p.stack|join(" &middot; ")|safe }}</p>
+    </div>
+    <div class="project-row-tags">
+      {% for tag in p.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+    </div>
+  </a>
+  {% endfor %}
+</section>
+
+{% endblock %}
