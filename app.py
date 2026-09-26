@@ -30,9 +30,9 @@ PROFILE = {
         "Tools": ["Git/GitHub", "Google Colab", "ngrok", "Jupyter"],
     },
     "contact": {
-        "email": "hello@example.com",
-        "github": "https://github.com/",
-        "linkedin": "https://linkedin.com/",
+        "email": "sailichowdaryk@gmail.com",
+        "github": "https://github.com/sailichowdaryk-spec",
+        "linkedin": "https://www.linkedin.com/in/saili-chowdary-kamsani-9bb23937b/?isSelfProfile=true",
     },
 }
 
@@ -53,16 +53,16 @@ ACHIEVEMENTS = [
 
 ACTIVITIES = [
     {
-        "title": "Minecraft building & modding",
-        "detail": "Pagoda-roof construction with deepslate tiles, and Fabric mod deobfuscation (intermediary-to-Yarn mapping) for a cape animation mod.",
+        "title": "Event Hosting and Managemnet",
+        "detail": "Actively involved in hosting and managing college events, developing strong skills in communication,coordination,leadership and teamwork while ensuring smooth execution of events.",
     },
     {
-        "title": "DSA roadmap",
-        "detail": "Following a 9-week roadmap (Striver's A2Z sheet, LeetCode, Codeforces Div 3/4 from Week 5) to get strong in DSA with C++.",
+        "title": "Basketball-College Team",
+        "detail": "Representing the college basketball team and cntributed to tournaments victories,demonstrating discipline, teamwork,perseverance, and a strong competetive spirit.",
     },
     {
-        "title": "IELTS preparation",
-        "detail": "Targeting a 7.5–8 band, working through Task Response and grammar feedback on practice essays.",
+        "title": "Hackathons and Ideathons",
+        "detail": "Actively participated in and ideathons,exploring innovative ideas,collaborating with diverse teams, and developing creative problem solving and analytical skills.",
     },
 ]
 
