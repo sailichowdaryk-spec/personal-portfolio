@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Activities — {{ profile.name }}{% endblock %}
+{% block content %}
+
+<section class="page-head">
+  <h1>🌱 Activities</h1>
+  <p>What I spend time on outside of coursework and projects.</p>
+</section>
+
+<section class="section">
+  <div class="highlights">
+    {% for a in activities %}
+    <div class="highlight-row">
+      <span class="highlight-label">{{ a.title }}</span>
+      <span class="highlight-value">{{ a.detail }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}

@@ -1,0 +1,41 @@
+{% extends "base.html" %}
+{% block title %}About — {{ profile.name }}{% endblock %}
+{% block content %}
+
+<section class="page-head">
+  <h1>👋 About me</h1>
+  <p>{{ profile.bio }}</p>
+</section>
+
+<section class="section">
+  <h2 class="section-title">📌 Background</h2>
+  <div class="highlights">
+    {% for h in profile.highlights %}
+    <div class="highlight-row">
+      <span class="highlight-label">{{ h.label }}</span>
+      <span class="highlight-value">{{ h.value }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">🧰 Skills</h2>
+  <div class="skills-grid">
+    {% for group, items in profile.skills.items() %}
+    <div class="skills-group">
+      <h4>{{ group }}</h4>
+      <ul>
+        {% for item in items %}<li>{{ item }}</li>{% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<section class="section">
+  <h2 class="section-title">✉️ Get in touch</h2>
+  <p><a class="pill-link" href="mailto:{{ profile.contact.email }}">{{ profile.contact.email }}</a></p>
+</section>
+
+{% endblock %}

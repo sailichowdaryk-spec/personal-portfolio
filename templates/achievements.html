@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}Achievements — {{ profile.name }}{% endblock %}
+{% block content %}
+
+<section class="page-head">
+  <h1>🏆 Achievements</h1>
+  <p>A few milestones along the way.</p>
+</section>
+
+<section class="section">
+  <div class="highlights">
+    {% for a in achievements %}
+    <div class="highlight-row">
+      <span class="highlight-label">{{ a.title }}</span>
+      <span class="highlight-value">{{ a.detail }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% endblock %}
